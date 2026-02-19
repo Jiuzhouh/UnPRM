@@ -74,8 +74,8 @@ Commands used in this repo:
 python generate_train_data.py \
   --seed 22 \
   --model_dir Qwen/Qwen2.5-7B-Instruct \
-  --data_dir data/sampled_math_questions_1369.json \
-  --save_dir qwen_outputs2.jsonl \
+  --data_dir data/sampled_math_questions.json \
+  --save_dir qwen_outputs.jsonl \
   --start 0 \
   --generate
 
@@ -84,9 +84,10 @@ python generate_train_data.py \
   --seed 22 \
   --model_dir Qwen/Qwen2.5-7B-Instruct \
   --synthetic_data_dir data/qwen_outputs_filtered.jsonl \
-  --save_dir qwen_outputs_labelled_uncertainty_delta_driven_entropy_sim_gen.jsonl \
+  --save_dir qwen_outputs_labelled_uncertainty_delta_driven_entropy.jsonl \
   --start 103 \
   --get_label \
+  --use_uncertainty_delta_driven \
   --use_uncertainty_delta_driven
 ```
 
