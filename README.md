@@ -115,10 +115,6 @@ python train_prm_main.py \
   --zeta 4
 ```
 
-What you get:
-
-- `--save_path/`: HuggingFace `save_pretrained(...)` output for the reward model and tokenizer.
-
 ## Score Steps With a PRM (Inference)
 
 Two common scoring patterns appear in the example scripts:
